@@ -1,1 +1,3 @@
-# test2
+# Markdown and Github guide
+## Gabriel Esteban Castillo Ramírez
+<h2>In this repository we can find two guides in which we can understand the basics about the Markdown language and Git and GitHub, from creating a repository to work in teams using GitHub</h2>
