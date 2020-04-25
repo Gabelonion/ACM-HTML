@@ -69,4 +69,5 @@ Like the social media, mentioning people or teams can be made by using @.
 
 Typing an @ symbol will bring up a list of people or teams on a project. The list filters as you type, so once you find the name of the person or team you are looking for, you can use the arrow keys to select it and press either tab or enter to complete the name
 
-Information took from : https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+For more syntax tools, follow the GitHub document mentioned in the README.md
+file.

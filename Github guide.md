@@ -319,4 +319,5 @@ To do a certain change, as we have seen, we should create a branch in order to a
 Now that the branch is pushed, we can see it in the repository, GitHub will recommend us to do a pull request, which means, a request to merge the changes in the master branch. If we click on the "Compare and pull request button" it will shows us a detailed comparison of the changes, comparing the master branch with the branch we have made, we can add a description to describe deeply what we have done and finally click on "Merge pull request", in this process it also notifies if conflicts exists, if not, it will send a message to the work team and finally decide to merge that branch into the master branch, now we can delete that branch.
 
 
-This is the end of the introductory guide, you can find the original information source of this guide in order to practice and see the process in an actual computer, follow this link to see it : [Git & GitHub Tutorial for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR) by The Net Ninja. It also cover the Forking and Contributing, which is basically collaborating with open source repositories made by other users in GitHub.
+This is the end of the introductory guide, you can find more information in the
+Youtube serie mentioned in the README.md file. 
