@@ -1,1 +1,2 @@
-# Markdown / Git and Github guide
+# ACM UD - HTML guide
+Created for the activities done in the HTML ACM-UD course.
