@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+    }
+
+    .contanier {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+        grid-gap: 50px;
+    }
+
+    .contanier>div {
+        border-radius: 5px;
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div class="contanier">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <table>
+        <tr>
+            <td>Elemento</td>
+            <td>Elemento</td>
+
+        </tr>
+        <tr>
+            <td>Elemento</td>
+
+            <td>Elemento</td>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
