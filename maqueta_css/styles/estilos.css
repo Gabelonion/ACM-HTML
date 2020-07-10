@@ -1,3 +1,4 @@
+/*Grid container (Layoutit!)*/
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -6,8 +7,7 @@
   grid-template-areas: "Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar" "Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title" "Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar" "Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image" "About_text- About_text- About_text- About_text- About_text- About_text- About_image About_image About_image About_image About_image About_image" "exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title" "card1 card1 card1 card2 card2 card2 card3 card3 card3 card4 card4 card4" "card5 card5 card5 card6 card6 card6 card7 card7 card7 . . ." "Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions" "Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title" "card8 card8 card8 card8 card9 card9 card9 card9 . . . ." "info info info info info info folllow folllow folllow folllow folllow folllow";
 }
 
-.exhibitions_title { grid-area: exhibitions_title; }
-
+/*Caracteristicas comunes*/
 .Section_commons{
   margin-left: 35px;
 }
@@ -21,6 +21,7 @@
   font-weight: 900;
 }
 
+/*Barra de navegacion*/
 .Navigation_bar {
   grid-area: Navigation_bar;
   font-family: Minion,Times New Roman, STSong,serif;
@@ -44,6 +45,7 @@
   float: right;
 }
 
+/*Titulo principal*/
 .Main_title {
   grid-area: Main_title;
   color: #222;
@@ -59,16 +61,18 @@
   border-bottom: 1px solid #b6b3b9;
 }
 
+/*Segunda barra de navegacion*/
 .Second_navigation_bar {
   grid-area: Second_navigation_bar;
 }
 
+/*Imagen principal*/
 .Main_image {
   grid-area: Main_image;
   position: relative;
   margin: auto;
 }
-
+/*Información de la imagen principal*/
 .Main_image img{
   position: absolute;
   top: -35px;
@@ -94,6 +98,8 @@
   grid-area: About_text-;
   top: 600px;
 }
+
+/*Informacion*/
 #about-content{
   position: absolute;
   margin-top: 60px;
@@ -102,6 +108,7 @@
   color: #222;
 }
 
+/*Imagen de la informacion*/
 .About_image {
   grid-area: About_image;
   position: relative;
@@ -116,11 +123,15 @@
   left: 20px;
   width: 480px;
 }
+
+/*Informacion de la imagen*/
 .About_image .image_info{
   position: relative;
   top: 600px;
   margin-left: 20px;
 }
+
+/*Creditos del fotografo*/
 #photo_credits{
   position: relative;
   font-family: 'Didact Gothic', sans-serif;
@@ -128,6 +139,8 @@
   color: #b6b3b9;
   font-weight: 900;
 }
+
+/*Informacion adicional del artista*/
 .About_image h2{
   margin-top: 25px;
 }
@@ -146,36 +159,40 @@
   color: #000;
 }
 
-.exhibitions_title{
-  grid-area: exhibitions_title;
-}
-
+/*Pie de página*/
 .footer_commons{
   position: relative;
   border-top: 1px solid #b6b3b9;
   padding-top: 20px;
   top: 500px;
 }
-
 .info {
    grid-area: info;
- }
- .info_links{
-   margin-top: 15px;
- }
- .info a{
-   color: #b6b3b9;
- }
+}
+.info_links{
+ margin-top: 15px;
+}
+.info a{
+ color: #b6b3b9;
+}
+.footer_commons a:link, .About_image a:hover, .About_image a:focus{
+ text-decoration: none;
+}
+.footer_commons a:hover{
+ color: #b6b3b9;
+}
+.footer_commons .links:hover{
+ color: #000;
+}
+.folllow {
+grid-area: folllow;
+margin-left: 0;
+padding-left: 35px;
+}
 
- .info a:link, .About_image a:hover, .About_image a:focus{
-   text-decoration: none;
- }
- .info a:hover{
-   color: #b6b3b9;
- }
- .info .links:hover{
-   color: #000;
- }
-
-
-.folllow { grid-area: folllow; }
+/*Copyright del autor de la pagina*/
+.Copyright{
+  position: relative;
+  top: 550px;
+  padding-bottom: 25px;
+}
