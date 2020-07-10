@@ -1,0 +1,181 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.5fr 0.2fr 1.7fr 2.2fr 0.4fr 1.5fr 1.3fr 0.5fr 0.5fr 2fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar Navigation_bar" "Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title Main_title" "Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar Second_navigation_bar" "Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image Main_image" "About_text- About_text- About_text- About_text- About_text- About_text- About_image About_image About_image About_image About_image About_image" "exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title exhibitions_title" "card1 card1 card1 card2 card2 card2 card3 card3 card3 card4 card4 card4" "card5 card5 card5 card6 card6 card6 card7 card7 card7 . . ." "Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions Link_exhibitions" "Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title Quarterly_title" "card8 card8 card8 card8 card9 card9 card9 card9 . . . ." "info info info info info info folllow folllow folllow folllow folllow folllow";
+}
+
+.exhibitions_title { grid-area: exhibitions_title; }
+
+.Section_commons{
+  margin-left: 35px;
+}
+.Section_title{
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  border-top: 1px solid #b6b3b9;
+  padding-top: 15px;
+  margin-top: 40px;
+  font-size: 33px;
+  font-weight: 900;
+}
+
+.Navigation_bar {
+  grid-area: Navigation_bar;
+  font-family: Minion,Times New Roman, STSong,serif;
+  font-size: 18px;
+  line-height: 22.5px;
+  font-weight: 600;
+  height: 30px;
+
+}
+.Navigation_bar a{
+  margin-right: 20px;
+  color: #b6b3b9;
+}
+.Navigation_bar a:link, .Navigation_bar a:hover, .Navigation_bar a:focus{
+  text-decoration: none;
+}
+.Navigation_bar a:hover{
+  color: #000;
+}
+.Navigation_bar .right_nav{
+  float: right;
+}
+
+.Main_title {
+  grid-area: Main_title;
+  color: #222;
+  font-family: 'Oswald','Pathway Gothic One', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-top: 1px solid #b6b3b9;
+  border-bottom: 1px solid #b6b3b9;
+}
+
+.Second_navigation_bar {
+  grid-area: Second_navigation_bar;
+}
+
+.Main_image {
+  grid-area: Main_image;
+  position: relative;
+  margin: auto;
+}
+
+.Main_image img{
+  position: absolute;
+  top: -35px;
+  left: -340px;
+  width: 900px;
+}
+.Main_image .image_info{
+  text-align: center;
+  position: relative;
+  font-family: 'Didact Gothic', sans-serif;
+  top: 630px;
+  font-weight: 900;
+  font-size: 12px;
+}
+#italic_info{
+  font-style: italic;
+}
+#par_info{
+  font-size: 13px;
+  color: #b6b3b9;
+}
+.About_text- {
+  grid-area: About_text-;
+  top: 600px;
+}
+#about-content{
+  position: absolute;
+  margin-top: 60px;
+  font-size: 19px;
+  font-weight: normal;
+  color: #222;
+}
+
+.About_image {
+  grid-area: About_image;
+  position: relative;
+  margin-top: 40px;
+  top: 600px;
+  font-size: 12px;
+  border-top: 1px solid #b6b3b9;
+}
+.About_image img{
+  position: absolute;
+  top: 119px;
+  left: 20px;
+  width: 480px;
+}
+.About_image .image_info{
+  position: relative;
+  top: 600px;
+  margin-left: 20px;
+}
+#photo_credits{
+  position: relative;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 13px;
+  color: #b6b3b9;
+  font-weight: 900;
+}
+.About_image h2{
+  margin-top: 25px;
+}
+.About_image a{
+  font-size: 17px;
+  margin-right: 20px;
+  color: #000;
+}
+.About_image a:link, .About_image a:hover, .About_image a:focus{
+  text-decoration: none;
+}
+.About_image a:hover{
+  color: #b6b3b9;
+}
+.About_image .links:hover{
+  color: #000;
+}
+
+.exhibitions_title{
+  grid-area: exhibitions_title;
+}
+
+.footer_commons{
+  position: relative;
+  border-top: 1px solid #b6b3b9;
+  padding-top: 20px;
+  top: 500px;
+}
+
+.info {
+   grid-area: info;
+ }
+ .info_links{
+   margin-top: 15px;
+ }
+ .info a{
+   color: #b6b3b9;
+ }
+
+ .info a:link, .About_image a:hover, .About_image a:focus{
+   text-decoration: none;
+ }
+ .info a:hover{
+   color: #b6b3b9;
+ }
+ .info .links:hover{
+   color: #000;
+ }
+
+
+.folllow { grid-area: folllow; }
